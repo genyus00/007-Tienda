@@ -9,14 +9,13 @@
         body {
             font-family: 'Arial', sans-serif;
             color: #fff;
-            background-image: url('Image_007.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
             text-align: center;
             margin: 0;
             padding: 0;
             position: relative;
+            background-size: cover;
+            background-image: url('Image_007.jpeg'); /* Ruta correcta a la imagen */
+            height: 100vh; /* Asegura que el body tenga altura completa */
         }
 
         /* Añadir el filtro de opacidad para la imagen de fondo (marca de agua) */
@@ -27,23 +26,45 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('Image_007.jpeg');
+            background-image: url('Image_007.jpeg'); /* Ruta correcta a la imagen */
             background-size: cover;
             background-position: center;
-            opacity: 0.2; /* Hace que la imagen sea más clara */
+            opacity: 0.5; /* Reduce la opacidad para que sea más sutil */
             z-index: -1; /* Pone la imagen detrás del contenido */
         }
 
+        /* Estilo para el contenido */
         h1 {
-            font-size: 60px;
+            font-size: 0; /* Elimina el tamaño de texto */
             margin-top: 150px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #f8b400; /* Color dorado para la línea */
+            width: 80%; /* Ajusta el largo de la línea */
+            margin: 0 auto;
+        }
+
+        /* Estilo para el contenedor de texto */
+        .content {
+            margin-top: 110px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mission-container {
+            margin-top: 100px; /* Ajusta el margen superior */
+        }
+
+        .cta-container {
+            margin-top: 60px; /* Ajusta el margen superior del botón */
         }
 
         p {
             font-size: 24px;
-            max-width: 800px;
-            margin: 20px auto;
             line-height: 1.6;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
         }
@@ -91,13 +112,22 @@
     </style>
 </head>
 <body>
-    <h1></h1>
-    <p><strong>Donde la elegancia se convierte en tu mejor arma.</strong></p>
-    <p>El hombre de verdad sabe que el estilo es su licencia para impresionar. En <strong>007</strong>, cada prenda está diseñada para quienes dominan la escena con confianza y distinción. Sacos impecables, pantalones de corte preciso, camisas sofisticadas y corbatas que sellan el look de un verdadero caballero.</p>
-    <p class="mission">🔫 <strong>Misión:</strong> Vestir con clase.<br>🍸 <strong>Código:</strong> Estilo impecable.<br>🎩 <strong>Identidad:</strong> 007</p>
-    <p><strong>Viste con poder. Viste con 007.</strong></p>
+    <h1><hr></h1> <!-- Línea Horizontal -->
+    <div class="content">
+        <p><strong>Donde la elegancia se convierte en tu mejor arma.</strong></p>
+        <p>El hombre de verdad sabe que el estilo es su licencia para impresionar. En <strong>007</strong>, cada prenda está diseñada para quienes dominan la escena con confianza y distinción. Sacos impecables, pantalones de corte preciso, camisas sofisticadas y corbatas que sellan el look de un verdadero caballero.</p>
 
-    <a href="https://www.tienda007.com" class="cta-button">Compra Ahora</a>
+        <!-- Contenedor para la misión y mensaje -->
+        <div class="mission-container">
+            <p class="mission">🔫 <strong>Misión:</strong> Vestir con clase.<br>🍸 <strong>Código:</strong> Estilo impecable.<br>🎩 <strong>Identidad:</strong> 007</p>
+            <p><strong>Viste con poder. Viste con 007.</strong></p>
+        </div>
+
+        <!-- Contenedor para el botón -->
+        <div class="cta-container">
+            <a href="https://www.gotrendier.com.co/u/donv" class="cta-button">Compra Ahora</a>
+        </div>
+    </div>
 
     <div class="footer">
         <p>© 2025 *007* | Todos los derechos reservados</p>
