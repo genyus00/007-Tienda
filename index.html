@@ -5,20 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>007 - Tienda de Ropa Elegante</title>
     <style>
+        /* Estilo general de la página */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #000;
+            font-family: 'Arial', sans-serif;
             color: #fff;
+            background-image: url('https://example.com/imagen-de-fondo.jpg'); /* Reemplaza por tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
+
         h1 {
-            font-size: 50px;
+            font-size: 60px;
+            margin-top: 150px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
         }
+
         p {
-            font-size: 20px;
-            max-width: 600px;
-            margin: auto;
+            font-size: 24px;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        strong {
+            color: #f8b400; /* Color dorado */
+        }
+
+        .mission {
+            font-size: 22px;
+            margin-top: 20px;
+            font-style: italic;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            background-color: #f8b400;
+            color: #000;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c68c00;
         }
     </style>
 </head>
@@ -26,7 +78,13 @@
     <h1>007 🕶️🎩</h1>
     <p><strong>Donde la elegancia se convierte en tu mejor arma.</strong></p>
     <p>El hombre de verdad sabe que el estilo es su licencia para impresionar. En <strong>007</strong>, cada prenda está diseñada para quienes dominan la escena con confianza y distinción. Sacos impecables, pantalones de corte preciso, camisas sofisticadas y corbatas que sellan el look de un verdadero caballero.</p>
-    <p>🔫 <strong>Misión:</strong> Vestir con clase.<br>🍸 <strong>Código:</strong> Estilo impecable.<br>🎩 <strong>Identidad:</strong> 007</p>
+    <p class="mission">🔫 <strong>Misión:</strong> Vestir con clase.<br>🍸 <strong>Código:</strong> Estilo impecable.<br>🎩 <strong>Identidad:</strong> 007</p>
     <p><strong>Viste con poder. Viste con 007.</strong></p>
+
+    <a href="https://www.tienda007.com" class="cta-button">Compra Ahora</a>
+
+    <div class="footer">
+        <p>© 2025 *007* | Todos los derechos reservados</p>
+    </div>
 </body>
 </html>
